@@ -13,3 +13,17 @@
 
 ## 🔗 Architecture
 React → Spring Boot → MySQL
+
+## 📸 Screenshots
+
+### Dashboard
+![Dashboard](Screenshots/dashboard.jpeg)
+
+### Add Expense
+![Add Expense](Screenshots/addExpense.jpeg)
+
+### Transactions
+![Reports](Screenshots/transactions.jpeg)
+
+### Reports
+![Reports](Screenshots/reports.jpeg)
