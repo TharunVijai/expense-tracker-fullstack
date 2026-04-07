@@ -1,0 +1,35 @@
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+
+}
+.container-right
+{
+  display: flex; flex: 1;
+  flex-direction: column;
+  height: 100vh;
+}
+.container-right {
+  margin: 10px; 
+  padding: 20px;
+  min-height: calc(100vh - 40px); /* 🔥 important */
+  background: #f3f3f3;
+  backdrop-filter: blur(12px);
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+.container-right > div:last-child {
+  flex: 1;
+  overflow-y: auto;
+}
+body {
+  background: linear-gradient(135deg, #06ae25, #a7f3d0);
+  padding: 10px;
+}

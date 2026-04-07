@@ -1,0 +1,98 @@
+.transactions {
+  padding: 20px;
+}
+.transactions h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1f2937; /* dark text */
+  margin-bottom: 20px;
+  position: relative;
+}
+.transactions h2::after {
+  content: "";
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #3bf673, #16a34a);
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  border-radius: 2px;
+}
+
+.transaction-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  padding: 10px; color: rgb(0, 0, 0);
+}
+
+.transaction-info {
+  flex: 1;
+  font-weight: 700;
+}
+.category-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 10px;
+  color: white;
+}
+.category-badge.FOOD {
+  background-color: #22c55e; /* green */
+}
+
+.category-badge.TRAVEL {
+  background-color: #3b82f6; /* blue */
+}
+
+.category-badge.SHOPPING {
+  background-color: #a855f7; /* purple */
+}
+
+.category-badge.BILLS {
+  background-color: #f59e0b; /* orange */
+}
+
+.edit-btn {
+  margin-right: 10px;
+  padding: 5px 10px;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000; /* VERY IMPORTANT */
+}
+.modal-content button {
+  align-self: flex-end;
+  padding: 6px 12px;
+}
+.modal-content {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

@@ -1,0 +1,82 @@
+.reports {
+  padding: 20px;
+  color: rgb(0, 0, 0);
+}
+
+/* Heading */
+.reports h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.reports h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(to right, #3bf673, #16a34a);
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.filters button {
+  padding: 6px 12px;
+  background: #3bf673;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Summary */
+.report-summary {
+  background: #b4ffcb;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.report-summary h3 {
+  margin: 0;
+}
+
+.report-summary p {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Chart */
+.report-chart {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* List */
+.report-list {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.report-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}

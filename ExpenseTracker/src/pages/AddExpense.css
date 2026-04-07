@@ -1,0 +1,64 @@
+
+.add-expense {
+  padding: 20px;
+  background: #f3f3f3;
+  min-height: 100vh;
+}
+
+.add-expense h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1f2937; /* dark text */
+  margin-bottom: 20px;
+  position: relative;
+}
+.add-expense h2::after {
+  content: "";
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #3bf673, #16a34a);
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  border-radius: 2px;
+}
+
+.add-expense form {
+  background: #f3f3f3;
+  padding: 20px;
+  /*border: 1px solid #00942c;*/
+  border-radius: 12px;
+  max-width: 400px;
+ /* box-shadow: 0 2px 8px rgba(0,0,0,0.05);*/
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;
+}
+
+.add-expense input,
+.add-expense select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #00942c;
+  outline: none;
+}
+
+.add-expense input:focus,
+.add-expense select:focus {
+  border-color: #ffbb00;
+}
+
+.add-expense button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #3bf673;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-expense button:hover {
+  background: #2ddc5a;
+}
